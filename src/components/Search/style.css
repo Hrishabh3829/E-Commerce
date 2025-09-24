@@ -1,0 +1,3 @@
+.searchBox input::placeholder { color: #6b7280 !important; }
+.searchBox input { caret-color: #111827; }
+.searchBox { overflow: hidden; }
