@@ -1,0 +1,77 @@
+.categoryPanel button {
+  text-transform: capitalize !important;
+}
+
+/* Sidebar refinements */
+.categoryPanel .scroll {
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+.categoryPanel .scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.categoryPanel .scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.categoryPanel .scroll::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 3px;
+}
+.categoryPanel .scroll::-webkit-scrollbar-thumb:hover {
+  background: #b5b5b5;
+}
+
+/* Submenu spacing */
+.categoryPanel .submenu a {
+  line-height: 1.25rem;
+}
+
+/* Smooth hover */
+.categoryPanel a,
+.categoryPanel button {
+  transition: color 0.18s ease, background-color 0.18s ease;
+}
+
+/* Force extra bold title */
+.categoryPanel .panel-title {
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+}
+
+.nav li .submenu {
+  visibility: hidden;
+}
+
+.nav li .submenu button {
+  font-weight: 400 !important;
+}
+
+.nav li:hover .submenu {
+  opacity: 1 !important;
+  visibility: visible;
+  top: 100%;
+}
+
+.nav li .submenu li:hover button {
+  color: #ff5252 !important;
+}
+
+/* Nested submenu */
+.nav li .submenu li .submenu {
+  top: 0px !important;
+  left: 120% !important;
+  opacity: 0 !important;
+}
+
+.nav li .submenu li:hover .submenu {
+  left: 100% !important;
+  opacity: 1 !important;
+}
+
+.nav li .submenu li .submenu button {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.nav li .submenu li .submenu button:hover {
+  color: #ff5252 !important;
+}
