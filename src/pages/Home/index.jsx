@@ -1,7 +1,16 @@
-import React from "react";
+import HomeCatSlider from "../../components/CatSlider";
+import HomeSlider from "../../components/HomeSlider";
 
 const Home = () => {
-  return <div className="text-2xl">Home</div>;
+  return (
+    <>
+      <HomeSlider />
+      <HomeCatSlider />
+
+      <br /> <br /> <br /><br /><br />
+      
+    </>
+  );
 };
 
 export default Home;

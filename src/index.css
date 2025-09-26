@@ -14,6 +14,7 @@ body {
   font-optical-sizing: auto;
   background: #f5f0f0;
   color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
 }
 
 .container {
@@ -35,4 +36,41 @@ nav ul button {
 
 nav ul button:hover {
   background: none !important;
+}
+
+.homeSlider { 
+  margin-bottom: 20px;
+}
+
+.homeCatSlider { 
+  margin-top: 20px;
+}
+
+.sliderHome {
+  overflow: inherit !important;
+  position: relative;
+  --swiper-navigation-size: 12px; 
+  --swiper-navigation-color: #000;
+}
+
+.sliderHome .swiper-button-prev,
+.sliderHome .swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff !important;
+  border-radius: 9999px !important; 
+  width: 45px !important;
+  height: 45px !important;
+  min-width: 45px !important;
+  overflow: hidden !important; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  z-index: 3;
+}
+
+.sliderHome .swiper-button-prev:after,
+.sliderHome .swiper-button-next:after {
+  font-size: 12px !important; 
+  color: #000 !important;
+  line-height: 1 !important;
 }
