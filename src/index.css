@@ -38,18 +38,18 @@ nav ul button:hover {
   background: none !important;
 }
 
-.homeSlider { 
+.homeSlider {
   margin-bottom: 20px;
 }
 
-.homeCatSlider { 
+.homeCatSlider {
   margin-top: 20px;
 }
 
 .sliderHome {
   overflow: inherit !important;
   position: relative;
-  --swiper-navigation-size: 12px; 
+  --swiper-navigation-size: 12px;
   --swiper-navigation-color: #000;
 }
 
@@ -59,18 +59,73 @@ nav ul button:hover {
   align-items: center;
   justify-content: center;
   background: #fff !important;
-  border-radius: 9999px !important; 
+  border-radius: 9999px !important;
   width: 45px !important;
   height: 45px !important;
   min-width: 45px !important;
-  overflow: hidden !important; 
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  overflow: hidden !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   z-index: 3;
 }
 
 .sliderHome .swiper-button-prev:after,
 .sliderHome .swiper-button-next:after {
-  font-size: 12px !important; 
+  font-size: 12px !important;
   color: #000 !important;
   line-height: 1 !important;
+}
+
+.homeCatSlider {
+  overflow: inherit !important;
+}
+
+.homeCatSlider .swiper {
+  overflow: visible !important;
+}
+
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff !important;
+  border-radius: 9999px !important;
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.homeCatSlider .swiper-button-prev:after,
+.homeCatSlider .swiper-button-next:after {
+  font-size: 12px !important;
+  color: #111827 !important;
+}
+
+.homeCatSlider .swiper-button-prev {
+  left: -12px !important;
+}
+.homeCatSlider .swiper-button-next {
+  right: -12px !important;
+}
+
+.homeCatSlider .swiper-button-prev:hover,
+.homeCatSlider .swiper-button-next:hover {
+  background: rgb(163, 236, 163) !important;
+}
+
+.homeCatSlider .swiper-button-prev:hover::after,
+.homeCatSlider .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+.homeCatSlider .item .rounded-full {
+  transition: transform 200ms ease;
+  transform-origin: center;
+  will-change: transform;
+}
+.homeCatSlider .item:hover .rounded-full {
+  transform: scale(1.1);
 }

@@ -1,3 +1,27 @@
-.searchBox input::placeholder { color: #6b7280 !important; }
-.searchBox input { caret-color: #111827; }
-.searchBox { overflow: hidden; }
+.searchBox input::placeholder {
+  color: #6b7280 !important;
+}
+.searchBox input {
+  caret-color: #111827;
+}
+.searchBox {
+  overflow: hidden;
+}
+
+.searchBox input[type="search"]::-webkit-search-decoration,
+.searchBox input[type="search"]::-webkit-search-cancel-button,
+.searchBox input[type="search"]::-webkit-search-results-button,
+.searchBox input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.searchBox input[type="search"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.searchBox input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
