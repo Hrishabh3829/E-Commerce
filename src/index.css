@@ -17,6 +17,21 @@ body {
   overflow-x: hidden;
 }
 
+/* Scrollbar width and height */
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
 .container {
   width: 90%;
   margin: auto;
@@ -121,6 +136,40 @@ nav ul button:hover {
   color: #fff !important;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff !important;
+  border-radius: 50%;
+  width: 45px !important;
+  height: 45px !important;
+  min-width: 45px !important;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 22px !important;
+  color: #000;
+}
+
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 55% !important;
+}
+
+.smlBtn .swiper-button-prev:after,
+.smlBtn .swiper-button-next:after {
+  font-size: 18px !important;
+  color: #000;
+}
+
 .homeCatSlider .item .rounded-full {
   transition: transform 200ms ease;
   transform-origin: center;
@@ -128,4 +177,25 @@ nav ul button:hover {
 }
 .homeCatSlider .item:hover .rounded-full {
   transform: scale(1.1);
+}
+
+/* Explicit section styling */
+.homeCatSlider {
+  margin-bottom: 3rem !important;
+}
+
+section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Free shipping box styling */
+.freeShipping {
+  border: 1px solid #ff5252 !important;
+  padding: 1.25rem 3rem !important;
+  margin-bottom: 2rem !important;
 }

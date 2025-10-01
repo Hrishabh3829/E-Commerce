@@ -18,7 +18,7 @@ const HomeSlider = () => {
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
-        className="mySwiper"
+      className="mySwiper"
       >
         <SwiperSlide>
           <div className="item rounded-[12px] overflow-hidden h-40 sm:h-56 md:h-72 lg:h-80 xl:h-96">
