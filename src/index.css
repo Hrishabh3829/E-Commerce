@@ -17,6 +17,20 @@ body {
   overflow-x: hidden;
 }
 
+/* Heading adjustments */
+h6,
+h3 {
+  padding-left: 0.5rem; /* small inward shift so it doesn't look like touching edge */
+}
+h3 {
+  font-weight: 500; /* slightly bolder */
+  line-height: 1.25;
+}
+:root {
+  --swiper-navigation-color: #5f5656; /* arrow icon color */
+  --swiper-navigation-size: 22px; /* base arrow size */
+}
+
 /* Scrollbar width and height */
 ::-webkit-scrollbar {
   width: 8px !important;
@@ -38,7 +52,7 @@ body {
 }
 
 .link:hover {
-  color: #ff5252;
+  color: #90ee90;
 }
 
 .MuiBadge-badge {
@@ -195,7 +209,21 @@ section {
 
 /* Free shipping box styling */
 .freeShipping {
-  border: 1px solid #ff5252 !important;
+  border: 1px solid #90ee90 !important;
   padding: 1.25rem 3rem !important;
   margin-bottom: 2rem !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #90ee90 !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #90ee90 !important;
+}
+
+.productsSlider .swiper-wrapper {
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
