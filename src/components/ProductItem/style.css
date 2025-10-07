@@ -3,6 +3,7 @@
   word-break: break-word;
 }
 
-.productItem .info h6, .productItem .info h3 {
+.productItem .info h6,
+.productItem .info h3 {
   margin: 0;
 }

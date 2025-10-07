@@ -7,7 +7,7 @@ import ProductItem from "../ProductItem";
 
 const ProductSlider = (props) => {
   return (
-    <div className="productsSlider py-5">
+    <div className="productsSlider py-3">
      
       <Swiper
           slidesPerView={props.items}
