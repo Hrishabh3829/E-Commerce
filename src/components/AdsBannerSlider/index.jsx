@@ -15,13 +15,6 @@ const AdsBannerSlider = (props) => {
         loop={false}
         grabCursor={true}
         watchOverflow={true}
-        breakpoints={{
-          0: { slidesPerView: 2.2, spaceBetween: 10 },
-          480: { slidesPerView: 3.2, spaceBetween: 10 },
-          640: { slidesPerView: 4.2, spaceBetween: 12 },
-          768: { slidesPerView: 5.2, spaceBetween: 12 },
-          1024: { slidesPerView: 6.2, spaceBetween: 12 },
-        }}
         modules={[Navigation]}
         className="smlBtn"
       >

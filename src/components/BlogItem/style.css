@@ -1,0 +1,17 @@
+/* BlogItem component styles */
+
+/* Root block */
+.blogItem { position: relative; }
+.blogItem .imgWrapper { position: relative; }
+.blogItem .imgWrapper img { width: 100%; transition: transform 300ms ease; }
+.blogItem:hover .imgWrapper img { transform: scale(1.05) rotate(1deg); }
+
+.blogItem .dateBadge { position:absolute; bottom:15px; right:15px; display:flex; align-items:center; justify-content:center; gap:4px; background:#f87171; color:#fff; font-size:11px; font-weight:500; padding:4px 6px; border-radius:6px; }
+.blogItem .dateBadge svg { font-size:16px; }
+
+.blogItem .info { padding-top:1rem; padding-bottom:1rem; }
+.blogItem .info h2 { font-size:16px; font-weight:600; color:#000; line-height:1.35; margin:0 0 .4rem; }
+.blogItem .info p { font-size:13px; font-weight:400; color:rgba(0,0,0,.8); line-height:1.4; margin:0 0 .65rem; }
+.blogItem .info .readMore { font-size:13px; font-weight:700; color:#767a76; text-decoration:none; position:relative; }
+.blogItem .info .readMore:after { content:""; position:absolute; left:0; bottom:-2px; width:0; height:2px; background:#90ee90; transition:width .25s ease; }
+.blogItem .info .readMore:hover:after { width:30%; }

@@ -1,0 +1,18 @@
+.section-heading {
+  font-weight: 700 !important; /* force bold */
+  letter-spacing: 0.3px;
+  line-height: 1.25;
+}
+
+.section-heading--emphasis {
+  font-weight: 800 !important;
+}
+
+/* Gap between ProductSlider and AdsBannerSlider in Latest Products section */
+.latest-products-ads-gap { margin-top: 2rem; }
+@media (min-width: 640px){
+  .latest-products-ads-gap { margin-top: 2.25rem; }
+}
+@media (min-width: 1024px){
+  .latest-products-ads-gap { margin-top: 2.75rem; }
+}

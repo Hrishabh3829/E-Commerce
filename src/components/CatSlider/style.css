@@ -1,0 +1,22 @@
+/* Category Slider styles */
+/* Reduced bottom padding to tighten gap below slider */
+.homeCatSlider { padding-top:.75rem; padding-bottom:.75rem; position:relative; }
+.homeCatSlider .swiper { overflow:visible !important; }
+.homeCatSlider .swiper-slide { height:auto; }
+.homeCatSlider .item { background:#fff; border-radius:4px; padding:1.75rem .75rem; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; transition:box-shadow .25s ease, transform .25s ease; position:relative; }
+.homeCatSlider .item:hover { box-shadow:0 4px 18px -4px rgba(0,0,0,.12); transform:translateY(-3px); }
+.homeCatSlider .item .catThumb { width:80px; height:80px; border-radius:50%; background:#f3f4f6; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.homeCatSlider .item .catThumb img { width:100%; height:100%; object-fit:cover; border-radius:50%; transition:transform .3s ease; }
+.homeCatSlider .item:hover .catThumb img { transform:scale(1.07); }
+.homeCatSlider .item h3 { margin-top:.75rem; font-size:15px; font-weight:500; color:#111827; letter-spacing:.25px; }
+
+/* Swiper navigation  */
+.homeCatSlider .swiper-button-prev, .homeCatSlider .swiper-button-next { width:28px !important; height:28px !important; min-width:28px !important; border:1px solid #e5e7eb !important; box-shadow:0 2px 6px rgba(0,0,0,.08); background:#fff !important; }
+.homeCatSlider .swiper-button-prev:after, .homeCatSlider .swiper-button-next:after { font-size:12px !important; color:#111827 !important; }
+.homeCatSlider .swiper-button-prev:hover, .homeCatSlider .swiper-button-next:hover { background:#90ee90 !important; }
+.homeCatSlider .swiper-button-prev:hover:after, .homeCatSlider .swiper-button-next:hover:after { color:#fff !important; }
+
+@media (max-width:640px){
+  .homeCatSlider { padding-bottom:1.5rem; }
+  .homeCatSlider .item { padding:1.25rem .5rem; }
+}
