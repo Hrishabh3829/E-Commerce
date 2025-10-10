@@ -1,8 +1,6 @@
 .categoryPanel button {
   text-transform: capitalize !important;
 }
-
-/* Sidebar refinements */
 .categoryPanel .scroll {
   max-height: calc(100vh - 120px);
   overflow-y: auto;
@@ -20,19 +18,13 @@
 .categoryPanel .scroll::-webkit-scrollbar-thumb:hover {
   background: #b5b5b5;
 }
-
-/* Submenu spacing */
 .categoryPanel .submenu a {
   line-height: 1.25rem;
 }
-
-/* Smooth hover */
 .categoryPanel a,
 .categoryPanel button {
   transition: color 0.18s ease, background-color 0.18s ease;
 }
-
-/* Force extra bold title */
 .categoryPanel .panel-title {
   font-weight: 600 !important;
   letter-spacing: 0.5px;
@@ -56,8 +48,6 @@
 .nav li .submenu li:hover button {
   color: #ff5252 !important;
 }
-
-/* Nested submenu */
 .nav li .submenu li .submenu {
   top: 0px !important;
   left: 120% !important;

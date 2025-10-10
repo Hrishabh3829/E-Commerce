@@ -17,32 +17,25 @@ body {
   overflow-x: hidden;
 }
 
-/* Heading adjustments */
 h6,
 h3 {
-  padding-left: 0.5rem; /* small inward shift so it doesn't look like touching edge */
+  padding-left: 0.5rem;
 }
 h3 {
-  font-weight: 500; /* slightly bolder */
+  font-weight: 500;
   line-height: 1.25;
 }
 :root {
-  --swiper-navigation-color: #5f5656; /* arrow icon color */
-  --swiper-navigation-size: 22px; /* base arrow size */
+  --swiper-navigation-color: #5f5656;
+  --swiper-navigation-size: 22px;
 }
-
-/* Scrollbar width and height */
 ::-webkit-scrollbar {
   width: 8px !important;
   height: 8px !important;
 }
-
-/* Scrollbar track */
 ::-webkit-scrollbar-track {
   background: #fff;
 }
-
-/* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
   background: #ccc;
 }
@@ -61,9 +54,8 @@ h3 {
 
 nav ul button {
   text-transform: capitalize !important;
-  font-weight: 700 !important; /* force bold for all nav items and submenu items */
+  font-weight: 700 !important;
 }
-/* Increase specificity to override Tailwind utility font weight classes inside nav */
 .nav .MuiButton-root,
 nav ul .MuiButton-root {
   font-weight: 700 !important;
@@ -199,39 +191,33 @@ nav ul button:hover {
   transform: scale(1.1);
 }
 
-/* Explicit section styling */
-/* Reduced bottom margin under category slider to shrink gray gap */
 .homeCatSlider {
   margin-bottom: 1.25rem !important;
 }
 
 section {
-  padding-top: 1.75rem !important; /* further tightened */
+  padding-top: 1.75rem !important;
   padding-bottom: 1.75rem !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   width: 100%;
 }
 
-/* Even tighter (apply alongside section) */
 .section-tight {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
 
-/* Remove vertical padding entirely when needed */
 .section-flat {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
-/* Optional helper if you later need spaced sections */
 .section-gap {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
 }
 
-/* Free shipping box styling */
 .freeShipping {
   border: 1px solid #90ee90 !important;
   padding: 1.25rem 3rem !important;
@@ -259,10 +245,6 @@ section {
   font-size: 16px;
   padding: 7px 20px !important;
 }
-
-/* footer form input::placeholder {
-  font-size: 14px;
-} */
 
 .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
 .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
