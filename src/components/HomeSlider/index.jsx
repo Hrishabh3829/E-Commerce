@@ -7,6 +7,7 @@ const HomeSlider = () => {
   return (
     <div className="homeSlider">
       <Swiper
+        loop={true}
         spaceBetween={10}
         autoHeight={true}
         centeredSlides={true}
@@ -21,7 +22,6 @@ const HomeSlider = () => {
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-        
         <SwiperSlide>
           <div className="item">
             <img
