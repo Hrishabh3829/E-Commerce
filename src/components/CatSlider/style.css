@@ -1,5 +1,5 @@
 .homeCatSlider {
-  padding-top: 0.75rem;
+  padding-top: 0.25rem; /* tighter gap above */
   padding-bottom: 0.75rem;
   position: relative;
 }

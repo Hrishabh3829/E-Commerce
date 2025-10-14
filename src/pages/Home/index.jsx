@@ -16,6 +16,7 @@ import ProductSlider from "../../components/ProductSlider";
 import BlogItem from "../../components/BlogItem";
 import Footer from "../../Footer";
 import HomeSliderV2 from "../../components/HomeSliderV2";
+import BannerBoxV2 from "../../components/bannerBoxV2";
 
 const Home = () => {
   const [value, setValue] = React.useState(0);
@@ -28,10 +29,28 @@ const Home = () => {
     <>
       {/* <HomeSlider /> */}
 
-      <section className="py-6">
-        <div className="container flex items-center">
-          <div className="part1 w-[75%]">
+      <section className="py-4 pb-3 section-bottom-compact">
+        <div className="container flex  gap-5">
+          <div className="part1 w-[70%]">
             <HomeSliderV2 />
+          </div>
+          <div className="part2 w-[30%] flex items-center gap-5 justify-between flex-col">
+            <BannerBoxV2
+              info="left"
+              image="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-1.jpg"
+              title="Samsung Gear Camera"
+              price="₹120"
+              link="/"
+              linkText="SHOP NOW"
+            />
+            <BannerBoxV2
+              info="right"
+              image="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-2.jpg"
+              title="Sasta Chair"
+              price="₹14"
+              link="/"
+              linkText="SHOP NOW"
+            />
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
@@ -19,7 +19,11 @@ const HomeSliderV2 = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[EffectFade, Navigation, Pagination]}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        modules={[EffectFade, Navigation, Pagination, Autoplay]}
         className="HomeSliderV2"
       >
         <SwiperSlide>
@@ -28,7 +32,7 @@ const HomeSliderV2 = () => {
 
             <div className="info absolute top-0 right-0 w-[50%] h-[100%] z-50 p-8 flex flex-col items-center justify-center">
               <h4 className="w-full text-left text-gray-700">
-                Saving Days Sale
+                Big Saving Days Sale
               </h4>
 
               <h2 className="w-full text-gray-900">
@@ -36,8 +40,7 @@ const HomeSliderV2 = () => {
               </h2>
 
               <h3 className="flex items-center gap-3 w-full mt-3 mb-3 text-gray-800 text-left">
-                Starting At Only{" "}
-                <span className="text-red-400">₹50</span>
+                Starting At Only <span className="text-red-400">₹50</span>
               </h3>
 
               <div className="w-full mt-auto mb-6 _btn">
@@ -59,8 +62,7 @@ const HomeSliderV2 = () => {
               </h2>
 
               <h3 className="flex items-center gap-3 w-full mt-3 mb-3 text-gray-800 text-left">
-                Starting At Only{" "}
-                <span className="text-red-400">₹30</span>
+                Starting At Only <span className="text-red-400">₹30</span>
               </h3>
 
               <div className="w-full mt-auto mb-6 _btn">

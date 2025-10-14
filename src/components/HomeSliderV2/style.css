@@ -1,6 +1,9 @@
 .HomeSliderV2 { position: relative; }
 .HomeSliderV2 .item { border-radius: 12px; overflow: hidden; position: relative; }
 .HomeSliderV2 .item img { width: 100%; display: block; height: auto; }
+/* Match shared hero height */
+.HomeSliderV2 .item { height: var(--hero-height); }
+.HomeSliderV2 .item img { height: 100%; object-fit: cover; }
 
 /* Typography overrides */
 .HomeSliderV2 .info h4 { font-size:18px; font-weight:600 !important; letter-spacing:.3px; margin:0 0 .75rem; }
