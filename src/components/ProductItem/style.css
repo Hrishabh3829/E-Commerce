@@ -1,5 +1,5 @@
 .productItem .title {
-  line-height: 1.25; /* corrected line-height */
+  line-height: 1.25;
   word-break: break-word;
 }
 
@@ -7,4 +7,3 @@
 .productItem .info h3 {
   margin: 0;
 }
-

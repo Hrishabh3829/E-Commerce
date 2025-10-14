@@ -17,32 +17,30 @@ body {
   overflow-x: hidden;
 }
 
-/* Heading adjustments */
 h6,
 h3 {
-  padding-left: 0.5rem; /* small inward shift so it doesn't look like touching edge */
-}
-h3 {
-  font-weight: 500; /* slightly bolder */
-  line-height: 1.25;
-}
-:root {
-  --swiper-navigation-color: #5f5656; /* arrow icon color */
-  --swiper-navigation-size: 22px; /* base arrow size */
+  padding-left: 0.5rem;
 }
 
-/* Scrollbar width and height */
+h3 {
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+:root {
+  --swiper-navigation-color: #5f5656;
+  --swiper-navigation-size: 10px;
+}
+
 ::-webkit-scrollbar {
   width: 8px !important;
   height: 8px !important;
 }
 
-/* Scrollbar track */
 ::-webkit-scrollbar-track {
   background: #fff;
 }
 
-/* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
   background: #ccc;
 }
@@ -61,9 +59,8 @@ h3 {
 
 nav ul button {
   text-transform: capitalize !important;
-  font-weight: 700 !important; /* force bold for all nav items and submenu items */
+  font-weight: 700 !important;
 }
-/* Increase specificity to override Tailwind utility font weight classes inside nav */
 .nav .MuiButton-root,
 nav ul .MuiButton-root {
   font-weight: 700 !important;
@@ -95,18 +92,19 @@ nav ul button:hover {
   justify-content: center;
   background: #fff !important;
   border-radius: 9999px !important;
-  width: 45px !important;
-  height: 45px !important;
-  min-width: 45px !important;
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
   overflow: hidden !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   z-index: 3;
 }
 
 .sliderHome .swiper-button-prev:after,
 .sliderHome .swiper-button-next:after {
-  font-size: 12px !important;
-  color: #000 !important;
+  font-size: var(--swiper-navigation-size) !important;
+  color: #111827 !important;
   line-height: 1 !important;
 }
 
@@ -135,7 +133,7 @@ nav ul button:hover {
 
 .homeCatSlider .swiper-button-prev:after,
 .homeCatSlider .swiper-button-next:after {
-  font-size: 12px !important;
+  font-size: var(--swiper-navigation-size) !important;
   color: #111827 !important;
 }
 
@@ -162,33 +160,48 @@ nav ul button:hover {
   align-items: center;
   justify-content: center;
   background: #fff !important;
-  border-radius: 50%;
-  width: 45px !important;
-  height: 45px !important;
-  min-width: 45px !important;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 9999px !important;
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: all 0.2s ease;
 }
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  font-size: 22px !important;
-  color: #000;
+  font-size: var(--swiper-navigation-size) !important;
+  color: #111827 !important;
+  line-height: 1 !important;
+  display: inline-block;
+}
+
+/* Global hover state */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #eef3ee !important;
+}
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+  color: #fff !important;
 }
 
 .smlBtn .swiper-button-prev,
 .smlBtn .swiper-button-next {
-  width: 30px !important;
-  height: 30px !important;
-  min-width: 30px !important;
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
   top: 55% !important;
 }
 
 .smlBtn .swiper-button-prev:after,
 .smlBtn .swiper-button-next:after {
-  font-size: 18px !important;
-  color: #000;
+  font-size: 12px !important;
+  color: #111827;
 }
+
+
 
 .homeCatSlider .item .rounded-full {
   transition: transform 200ms ease;
@@ -199,39 +212,39 @@ nav ul button:hover {
   transform: scale(1.1);
 }
 
-/* Explicit section styling */
-/* Reduced bottom margin under category slider to shrink gray gap */
+
 .homeCatSlider {
-  margin-bottom: 1.25rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 section {
-  padding-top: 1.75rem !important; /* further tightened */
+  padding-top: 1.75rem !important;
   padding-bottom: 1.75rem !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   width: 100%;
 }
 
-/* Even tighter (apply alongside section) */
 .section-tight {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
 
-/* Remove vertical padding entirely when needed */
 .section-flat {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
-/* Optional helper if you later need spaced sections */
 .section-gap {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
 }
 
-/* Free shipping box styling */
+
+.section-bottom-compact {
+  padding-bottom: 0.5rem !important;
+}
+
 .freeShipping {
   border: 1px solid #90ee90 !important;
   padding: 1.25rem 3rem !important;
@@ -260,10 +273,6 @@ section {
   padding: 7px 20px !important;
 }
 
-/* footer form input::placeholder {
-  font-size: 14px;
-} */
-
 .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
 .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
   color: #90ee90 !important;
@@ -271,5 +280,46 @@ section {
 
 .MuiFormControlLabel-label {
   font-size: 13px !important;
-  color: rgba(0, 0, 0, 0.8) ;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+  background: #90ee90 !important;
+}
+
+.HomeSliderV2 .swiper-slide-active .info {
+  right: 0px !important;
+  opacity: 1;
+}
+
+.HomeSliderV2 .swiper-slide-active .info h4 {
+  right: 0px !important;
+  opacity: 1;
+}
+.HomeSliderV2 .swiper-slide-active .info h3 {
+  right: 0px !important;
+  opacity: 1;
+}
+.HomeSliderV2 .swiper-slide-active .info h2 {
+  right: 0px !important;
+  opacity: 1;
+}
+.HomeSliderV2 .swiper-slide-active .info ._btn {
+  right: 0px !important;
+  opacity: 1;
+}
+
+.HomeSliderV2 .info h4 {
+  transition-duration: 1.2s;
+}
+
+.HomeSliderV2 .info h2 {
+  transition-duration: 1.5s;
+}
+
+.HomeSliderV2 .info h3 {
+  transition-duration: 1.8s;
+}
+.HomeSliderV2 .info ._btn {
+  transition-duration: 2.1s;
 }

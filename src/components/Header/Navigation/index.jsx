@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import  { useState } from "react";
+import { useState } from "react";
 import { GoRocket } from "react-icons/go";
 import { LiaAngleDownSolid } from "react-icons/lia";
 import { RiMenu2Fill } from "react-icons/ri";
@@ -188,7 +188,6 @@ const Navigation = () => {
         </div>
       </nav>
 
-      {/* category side bar */}
       <CategoryPanel
         isOpenCatPanel={isOpenCatPanel}
         setIsOpenCatPanel={setIsOpenCatPanel}

@@ -56,7 +56,6 @@ const CategoryPanel = ({ isOpenCatPanel, setIsOpenCatPanel }) => {
 
   const DrawerContent = (
     <Box sx={{ width: 260 }} role="presentation" className="categoryPanel">
-      {/* Top header */}
       <div className="flex items-center justify-between px-4 pt-5 pb-3 border-b border-gray-200">
         <h3 className="panel-title text-[16px] font-black tracking-wide m-0 cursor-pointer">
           Shop by Categories
@@ -69,13 +68,11 @@ const CategoryPanel = ({ isOpenCatPanel, setIsOpenCatPanel }) => {
           <IoCloseSharp className="text-[20px]" />
         </IconButton>
       </div>
-
-      {/* Categories */}
       <div className="scroll">
         <ul className="w-full space-y-1 mt-2">
           {categories.map((cat, idx) => {
             const openTop = submenuIndex === idx;
-            const innerIdx = idx; // one inner submenu per category, reuse idx
+            const innerIdx = idx;
             const openInner = innerSubmenuIndex === innerIdx;
             const sortedItems = [...cat.sub.items].sort((a, b) =>
               b.localeCompare(a)
