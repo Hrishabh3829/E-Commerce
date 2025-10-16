@@ -4,6 +4,7 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import HomeCatSlider from "../../components/CatSlider";
 import HomeSlider from "../../components/HomeSlider";
 import AdsBannerSlider from "../../components/AdsBannerSlider";
+import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,7 +15,7 @@ import Tab from "@mui/material/Tab";
 
 import ProductSlider from "../../components/ProductSlider";
 import BlogItem from "../../components/BlogItem";
-import Footer from "../../Footer";
+
 import HomeSliderV2 from "../../components/HomeSliderV2";
 import BannerBoxV2 from "../../components/bannerBoxV2";
 
@@ -27,14 +28,14 @@ const Home = () => {
 
   return (
     <>
-      {/* <HomeSlider /> */}
+      {/* Legacy slider kept for reference: <HomeSlider /> */}
 
-      <section className="py-4 pb-3 section-bottom-compact">
-        <div className="container flex  gap-5">
-          <div className="part1 w-[70%]">
+      <section className="bg-white home-hero-band py-4 pb-3 section-bottom-compact">
+        <div className="container flex flex-col lg:flex-row gap-4 lg:gap-5">
+          <div className="part1 w-full lg:w-[70%]">
             <HomeSliderV2 />
           </div>
-          <div className="part2 w-[30%] flex items-center gap-5 justify-between flex-col">
+          <div className="part2 w-full lg:w-[30%] flex items-stretch gap-4 lg:gap-5 justify-between flex-col">
             <BannerBoxV2
               info="left"
               image="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-1.jpg"
@@ -93,23 +94,23 @@ const Home = () => {
       </section>
       <section className="py-4 pt-2 bg-white">
         <div className="container">
-          <div className="freeShipping w-full py-4 p-4  border-2 border-[#ff5252] flex items-center justify-between rounded-md">
-            <div className="col1 flex items-center gap-4">
-              <LiaShippingFastSolid className="text-[50px]" />
-              <span className="text-[20px] font-[600] uppercase">
+          <div className="freeShipping w-full py-4 p-4 border-2 border-[#ff5252] flex flex-col sm:flex-row items-center justify-between gap-3 rounded-md">
+            <div className="col1 flex items-center gap-3 sm:gap-4">
+              <LiaShippingFastSolid className="text-[40px] sm:text-[50px]" />
+              <span className="text-[18px] sm:text-[20px] font-[600] uppercase">
                 Free Shipping{" "}
               </span>
             </div>
 
-            <div className="col2 ">
-              <p className="mb-0 font-[500]">
+            <div className="col2 text-center sm:text-left">
+              <p className="mb-0 font-[500] text-[14px] sm:text-[16px] leading-snug">
                 Free Delivery Now On Your First Order and over ₹200
               </p>
             </div>
-            <p className="font-bold text-[25px]">- Only ₹200*</p>
+            <p className="font-bold text-[20px] sm:text-[25px]">- Only ₹200*</p>
           </div>
 
-          <AdsBannerSlider items={5} />
+          <AdsBannerSliderV2 items={4} />
         </div>
       </section>
       <section className="py-5 pt-0 bg-white">
@@ -136,11 +137,17 @@ const Home = () => {
         <div className="container">
           <h2 className="section-heading text-[20px] mt-4">From The Blog</h2>
           <Swiper
-            slidesPerView={4}
-            spaceBetween={30}
             navigation={true}
             modules={[Navigation]}
-            className="blogSlider"
+            className="blogSlider smlBtn"
+            breakpoints={{
+              0: { slidesPerView: 1.05, spaceBetween: 12 },
+              480: { slidesPerView: 1.2, spaceBetween: 14 },
+              640: { slidesPerView: 2, spaceBetween: 16 },
+              768: { slidesPerView: 2.5, spaceBetween: 18 },
+              1024: { slidesPerView: 3, spaceBetween: 20 },
+              1280: { slidesPerView: 4, spaceBetween: 24 },
+            }}
           >
             <SwiperSlide>
               <BlogItem />
@@ -161,7 +168,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Footer />
+      
     </>
   );
 };

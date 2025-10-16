@@ -71,4 +71,7 @@
   :root { --hero-height: 340px; }
   .BannerBoxV2 { height:auto; }
   .BannerBoxV2 img { height:auto; }
+  .BannerBoxV2 .info { width: 100%; padding: 1rem; }
+  .BannerBoxV2 .info h2 { font-size: 16px; }
+  .BannerBoxV2 .info span { font-size: 18px; }
 }

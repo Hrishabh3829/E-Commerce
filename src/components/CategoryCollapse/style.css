@@ -1,0 +1,5 @@
+.categoryCollapse .scroll{max-height:calc(100vh - 200px);overflow-y:auto}
+.categoryCollapse .scroll::-webkit-scrollbar{width:6px}
+.categoryCollapse .scroll::-webkit-scrollbar-thumb{background:#d4d4d4;border-radius:3px}
+.categoryCollapse .scroll::-webkit-scrollbar-thumb:hover{background:#b5b5b5}
+.categoryCollapse .submenu{transition:max-height .25s ease,padding .2s ease}

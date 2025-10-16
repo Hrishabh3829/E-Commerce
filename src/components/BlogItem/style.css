@@ -41,13 +41,23 @@
   color: #000;
   line-height: 1.35;
   margin: 0 0 0.4rem;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .blogItem .info p {
   font-size: 13px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0 0 0.65rem;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .blogItem .info .readMore {
   font-size: 13px;
@@ -68,4 +78,11 @@
 }
 .blogItem .info .readMore:hover:after {
   width: 30%;
+}
+
+/* Blog card responsive refinements */
+@media (max-width: 640px) {
+  .blogItem .info { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+  .blogItem .info h2 { font-size: 15px; }
+  .blogItem .info p { font-size: 12px; line-clamp: 2; -webkit-line-clamp: 2; }
 }

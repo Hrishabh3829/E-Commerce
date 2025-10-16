@@ -33,3 +33,20 @@
 
 /* Pagination active color match */
 .HomeSliderV2 .swiper-pagination-bullet-active { background:#90ee90 !important; }
+
+/* Responsive adjustments */
+@media (max-width: 1024px){
+	.HomeSliderV2 .info h2 { font-size: 28px; }
+	.HomeSliderV2 .info h3 span { font-size: 26px; }
+}
+@media (max-width: 768px){
+	.HomeSliderV2 .item { height: calc(var(--hero-height) - 60px); }
+	.HomeSliderV2 .info { width: 100% !important; left: 0; right: 0; padding: 1rem !important; }
+	.HomeSliderV2 .info h2 { font-size: 24px; }
+	.HomeSliderV2 .info h3 { font-size: 16px; }
+}
+@media (max-width: 480px){
+	.HomeSliderV2 .info h2 { font-size: 20px; }
+	.HomeSliderV2 .info h4 { font-size: 14px; }
+	.HomeSliderV2 .info h3 span { font-size: 22px; }
+}

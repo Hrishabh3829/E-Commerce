@@ -7,3 +7,11 @@
 .productItem .info h3 {
   margin: 0;
 }
+
+/* Responsive tweaks for card visuals */
+@media (max-width: 480px){
+  .productItem .img { height: 200px; }
+}
+@media (max-width: 360px){
+  .productItem .img { height: 180px; }
+}

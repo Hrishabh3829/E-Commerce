@@ -54,17 +54,17 @@ const Header = () => {
       </div>
 
       <div className="Header">
-        <div className="container flex items-center justify-between divide-x-2 divide-gray-400">
-          <div className="col1 w-[25%] pr-6">
+  <div className="container flex flex-col md:flex-row items-center md:items-center justify-between md:divide-x-2 md:divide-gray-400 gap-3 md:gap-0">
+          <div className="col1 w-full md:w-[25%] md:pr-6">
             <Link to="/">
               <img src="/logo.svg" alt="logo" className="w-[120px] h-auto" />
             </Link>
           </div>
-          <div className="col2 w-[45%] px-6">
+          <div className="col2 w-full md:w-[45%] md:px-6 mt-2 md:mt-0">
             <Search />
           </div>
-          <div className="col3 w-[30%] flex items-center px-6 justify-end">
-            <ul className="flex items-center gap-4">
+          <div className="col3 w-full md:w-[30%] flex items-center md:px-6 justify-between md:justify-end mt-2 md:mt-0">
+            <ul className="flex items-center gap-4 w-full md:w-auto justify-between md:justify-end">
               <li className="list-none">
                 <Link
                   to="/login"

@@ -14,6 +14,13 @@ const HomeCatSlider = () => {
           spaceBetween={12}
           loop={true}
           grabCursor={true}
+          breakpoints={{
+            0: { slidesPerView: 2, spaceBetween: 10 },
+            480: { slidesPerView: 3, spaceBetween: 10 },
+            640: { slidesPerView: 4, spaceBetween: 12 },
+            768: { slidesPerView: 5, spaceBetween: 12 },
+            1024: { slidesPerView: 6, spaceBetween: 14 },
+          }}
           className="mySwiper"
         >
           <SwiperSlide>
