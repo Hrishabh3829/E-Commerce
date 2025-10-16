@@ -66,3 +66,5 @@
 .nav li .submenu li .submenu button:hover {
   color: #ff5252 !important;
 }
+
+/* Keep baseline submenu interactions */

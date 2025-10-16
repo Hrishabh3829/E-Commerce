@@ -45,8 +45,9 @@ h3 {
   background: #ccc;
 }
 .container {
-  width: 90%;
-  margin: auto;
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .link:hover {
@@ -187,6 +188,13 @@ nav ul button:hover {
   color: #fff !important;
 }
 
+/* Blog slider: subtle spacing and tighter arrows on mobile */
+.blogSlider { padding-top: 6px; padding-bottom: 6px; }
+.blogSection .swiper-button-prev, .blogSection .swiper-button-next { top: 42% !important; }
+@media (max-width: 640px){
+  .blogSection .swiper-button-prev, .blogSection .swiper-button-next { top: 48% !important; }
+}
+
 .smlBtn .swiper-button-prev,
 .smlBtn .swiper-button-next {
   width: 28px !important;
@@ -264,6 +272,13 @@ section {
   margin-left: -15px;
   margin-right: -15px;
 }
+
+@media (max-width: 480px){
+  .productsSlider .swiper-wrapper { padding: 10px; margin-left: -10px; margin-right: -10px; }
+}
+
+/* Guardrail: prevent accidental horizontal overflow from any element */
+html, body { max-width: 100%; overflow-x: hidden; }
 
 .btn-org {
   background-color: #f10a57 !important;

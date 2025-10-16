@@ -26,9 +26,9 @@
   height: 0;
 }
 
-.searchBox {
-  width: 100%;
-}
+.searchBox { width: 100%; }
+.searchBox .field { max-width: 720px; margin: 0 auto; }
+@media (min-width: 1024px){ .searchBox .field { max-width: 640px; } }
 .searchBox .field {
   position: relative;
   background: #f3f4f6;
