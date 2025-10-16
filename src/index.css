@@ -189,10 +189,19 @@ nav ul button:hover {
 }
 
 /* Blog slider: subtle spacing and tighter arrows on mobile */
-.blogSlider { padding-top: 6px; padding-bottom: 6px; }
-.blogSection .swiper-button-prev, .blogSection .swiper-button-next { top: 42% !important; }
-@media (max-width: 640px){
-  .blogSection .swiper-button-prev, .blogSection .swiper-button-next { top: 48% !important; }
+.blogSlider {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.blogSection .swiper-button-prev,
+.blogSection .swiper-button-next {
+  top: 42% !important;
+}
+@media (max-width: 640px) {
+  .blogSection .swiper-button-prev,
+  .blogSection .swiper-button-next {
+    top: 48% !important;
+  }
 }
 
 .smlBtn .swiper-button-prev,
@@ -209,8 +218,6 @@ nav ul button:hover {
   color: #111827;
 }
 
-
-
 .homeCatSlider .item .rounded-full {
   transition: transform 200ms ease;
   transform-origin: center;
@@ -219,7 +226,6 @@ nav ul button:hover {
 .homeCatSlider .item:hover .rounded-full {
   transform: scale(1.1);
 }
-
 
 .homeCatSlider {
   margin-bottom: 0.5rem !important;
@@ -248,7 +254,6 @@ section {
   margin-bottom: 3rem !important;
 }
 
-
 .section-bottom-compact {
   padding-bottom: 0.5rem !important;
 }
@@ -273,12 +278,20 @@ section {
   margin-right: -15px;
 }
 
-@media (max-width: 480px){
-  .productsSlider .swiper-wrapper { padding: 10px; margin-left: -10px; margin-right: -10px; }
+@media (max-width: 480px) {
+  .productsSlider .swiper-wrapper {
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 }
 
 /* Guardrail: prevent accidental horizontal overflow from any element */
-html, body { max-width: 100%; overflow-x: hidden; }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .btn-org {
   background-color: #f10a57 !important;
@@ -302,39 +315,6 @@ html, body { max-width: 100%; overflow-x: hidden; }
   background: #90ee90 !important;
 }
 
-.HomeSliderV2 .swiper-slide-active .info {
-  right: 0px !important;
-  opacity: 1;
-}
-
-.HomeSliderV2 .swiper-slide-active .info h4 {
-  right: 0px !important;
-  opacity: 1;
-}
-.HomeSliderV2 .swiper-slide-active .info h3 {
-  right: 0px !important;
-  opacity: 1;
-}
-.HomeSliderV2 .swiper-slide-active .info h2 {
-  right: 0px !important;
-  opacity: 1;
-}
-.HomeSliderV2 .swiper-slide-active .info ._btn {
-  right: 0px !important;
-  opacity: 1;
-}
-
-.HomeSliderV2 .info h4 {
-  transition-duration: 1.2s;
-}
-
-.HomeSliderV2 .info h2 {
-  transition-duration: 1.5s;
-}
-
-.HomeSliderV2 .info h3 {
-  transition-duration: 1.8s;
-}
-.HomeSliderV2 .info ._btn {
-  transition-duration: 2.1s;
+.MuiCheckbox-root {
+  padding: 6px !important;
 }

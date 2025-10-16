@@ -4,6 +4,7 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import HomeCatSlider from "../../components/CatSlider";
 import HomeSlider from "../../components/HomeSlider";
 import AdsBannerSlider from "../../components/AdsBannerSlider";
+import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,7 +15,7 @@ import Tab from "@mui/material/Tab";
 
 import ProductSlider from "../../components/ProductSlider";
 import BlogItem from "../../components/BlogItem";
-import Footer from "../../Footer";
+
 import HomeSliderV2 from "../../components/HomeSliderV2";
 import BannerBoxV2 from "../../components/bannerBoxV2";
 
@@ -109,7 +110,7 @@ const Home = () => {
             <p className="font-bold text-[20px] sm:text-[25px]">- Only ₹200*</p>
           </div>
 
-          <AdsBannerSlider items={5} />
+          <AdsBannerSliderV2 items={4} />
         </div>
       </section>
       <section className="py-5 pt-0 bg-white">
@@ -167,7 +168,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Footer />
+      
     </>
   );
 };
