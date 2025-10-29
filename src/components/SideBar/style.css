@@ -16,3 +16,32 @@
 .sidebar .scroll::-webkit-scrollbar-thumb {
   background: #ccc !important;
 }
+
+/* Smooth open/close animation for react-collapse */
+.ReactCollapse--collapse {
+  transition: height 500ms ease;
+  overflow: hidden; /* ensure content is clipped while animating */
+}
+
+/* Sidebar heading: keep items parallel (text + chevron) with a tiny gap */
+.sidebar .box h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 8px; /* little gap between title and icon */
+}
+
+.sidebar .box h3 button {
+  min-width: auto;
+  padding: 4px; /* compact icon button */
+  line-height: 1;
+}
+
+/* Breadcrumb small horizontal gap around the separator */
+.MuiBreadcrumbs-separator {
+  margin: 0 6px;
+}
+.MuiBreadcrumbs-ol > li + li {
+  margin-left: 2px;
+}
+
