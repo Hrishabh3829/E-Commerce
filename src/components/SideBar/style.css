@@ -45,3 +45,156 @@
   margin-left: 2px;
 }
 
+/* Range Slider Professional Styling */
+.range-slider-wrapper {
+  padding: 4px 0;
+  margin: 8px 0 6px 0;
+}
+
+.range-slider {
+  height: 3px !important;
+  background: #e0e0e0 !important;
+  border-radius: 2px;
+}
+
+.range-slider .range-slider__thumb {
+  width: 14px !important;
+  height: 14px !important;
+  background: #90EE90 !important;
+  border: 2px solid #fff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.range-slider .range-slider__thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.range-slider .range-slider__thumb:active {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.range-slider .range-slider__range {
+  background: #90EE90 !important;
+  height: 3px !important;
+}
+
+/* Price Range Display */
+.priceRange {
+  font-size: 14px;
+  color: #666;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  gap: 12px;
+}
+
+.priceRange span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.priceRange strong {
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Filter By Price heading spacing */
+.sidebar .box h3 {
+  margin-bottom: 8px;
+}
+
+/* Rating Filter Styling */
+.rating-filter-wrapper {
+  padding: 8px 0;
+}
+
+.rating-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.rating-item:hover {
+  background: #f5f5f5;
+  border-color: #e0e0e0;
+}
+
+.rating-item.active {
+  background: #e8f5e9;
+  border-color: #90EE90;
+}
+
+.rating-item .MuiRating-root {
+  color: #FFD700 !important;
+}
+
+.rating-item .MuiRating-iconEmpty {
+  color: #e0e0e0 !important;
+}
+
+.rating-label {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.rating-item.active .rating-label {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .range-slider-wrapper {
+    padding: 3px 0;
+    margin: 6px 0 4px 0;
+  }
+  
+  .priceRange {
+    font-size: 13px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+  
+  .priceRange strong {
+    font-size: 14px;
+  }
+
+  .rating-item {
+    padding: 6px 10px;
+  }
+
+  .rating-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .range-slider .range-slider__thumb {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .rating-filter-wrapper {
+    padding: 6px 0;
+  }
+
+  .rating-item {
+    padding: 6px 8px;
+    gap: 6px;
+  }
+}
+
